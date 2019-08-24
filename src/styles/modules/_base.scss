@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	font-family: $ff-ss;
 
 	&::-webkit-scrollbar {
     width: 8px;
@@ -25,21 +26,30 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $ff-ss;
 	font-weight: $fw-b;
 	margin: 0;
 }
 
 p,
 ul {
-	font-family: $ff-ss;
-	font-weight: $fw-r;
 	margin: 0;
 	padding: 0;
+	
+	font-weight: $fw-r;
 
 	@media (max-width: 599px) {
 		font-size: 14px;
 	}
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	line-height: 1.4em;
 }
 
 a {
