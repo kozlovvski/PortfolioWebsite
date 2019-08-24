@@ -1,15 +1,19 @@
+$padding: 20px;
+
 body {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
-	width: 100vw;
+    width: 100vw;
+    
+    padding: $padding;
 
 	color: #fff;
 	background: linear-gradient(
 		to right,
 		#11998e,
 		#38ef7d
-	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	);
 }
 
 .site-header {
@@ -30,7 +34,7 @@ body {
 			flex-grow: 1;
 
 			.navigation__item {
-				margin-left: 20px;
+				margin-left: $padding;
 			}
 		}
 
@@ -40,7 +44,9 @@ body {
             max-width: 600px;
 			height: 5vh;
             top: 50%;
-            padding: 20px 76px 20px 56px;
+
+            padding: 0 76px $padding 56px;
+            
 			transform: rotate(-90deg) translate(-50%, 0);
 			transform-origin: left top;
 		}
@@ -55,33 +61,32 @@ body {
 #main-content {
 	flex-grow: 1;
     overflow: auto;
-    padding-left: 56px;
-    padding-right: 20px;
+
+
+    padding-top: calc((100vh - 600px) / 2);
+    padding-bottom: calc((100vh - 600px) / 2);
+    padding-left: 36px;
+    padding-right: $padding;
+    margin: $padding 0;
 }
 
 .site-footer {
     text-align: right;
 }
 
-.padding {
-    padding: 20px;
-    @media (min-width: 600px) {
-        padding: 40px
-    }
-}
-
 @media (min-width: 600px) {
-    .padding {
-        padding: 40px;
+    $padding: 40px;
+
+    body {
+        padding: $padding;
     }
 
     #main-content {
-        padding-top: 100px;
-        padding-left: 16px + 40px *2;
-        padding-right: 40px;
+        padding-left: 16px + $padding;
+        padding-right: $padding;
     }
 
     .navigation__container--site {
-        padding: 40px 116px 40px 96px;
+        padding: 0 116px 0 96px;
     }
 }
