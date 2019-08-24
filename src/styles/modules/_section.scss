@@ -1,6 +1,6 @@
 .section {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 50% 50%;
 	grid-template-areas: "img title" "img content";
   grid-template-rows: auto 1fr;
   margin-bottom: 10rem;
@@ -28,7 +28,7 @@
 	}
 }
 
-@media (max-width: 599px) {
+@media (max-width: 699px) {
 	.section {
 		grid-template-areas: "title img" "content content";
     grid-template-columns: auto 1fr;

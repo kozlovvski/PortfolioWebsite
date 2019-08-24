@@ -3,7 +3,7 @@
 	font-family: $ff-ss;
 
 	&::-webkit-scrollbar {
-    width: 8px;
+		width: 8px;
 	}
 
 	&::-webkit-scrollbar-track {
@@ -34,10 +34,10 @@ p,
 ul {
 	margin: 0;
 	padding: 0;
-	
+
 	font-weight: $fw-r;
 
-	@media (max-width: 599px) {
+	@media (max-width: 699px) {
 		font-size: 14px;
 	}
 }
@@ -53,7 +53,31 @@ p {
 }
 
 a {
-  color: inherit;
-  font-weight: $fw-b;
-  text-decoration: none;
+	color: inherit;
+	font-weight: $fw-b;
+	text-decoration: none;
+	position: relative;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 95%;
+		height: 2px;
+		position: absolute;
+		top: 110%;
+		left: 50%;
+		transform: translate(-50%, -200%);
+
+		background: #fff;
+		opacity: 0;
+
+		transition: all ease 0.3s;
+	}
+
+	&:hover {
+		&::after {
+			opacity: 1;
+			transform: translate(-50%, 0)
+		}
+	}
 }

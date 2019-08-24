@@ -64,9 +64,9 @@
 				<h2 class="section__title">Cześć!</h2>
 				<div class="section__content">
 					<p>
-						Nazywam się Michał Kozłowski i jestem grafikiem freelancerem, a
-						ostatnimi czasy uczę się front-endu. Aktualnie szukam pierwszej
-						pracy, więc pozwól, że trochę Ci o sobie opowiem :)
+						Nazywam się <strong>Michał Kozłowski</strong> i jestem grafikiem
+						freelancerem, a ostatnimi czasy uczę się front-endu. Aktualnie
+						szukam pierwszej pracy, więc pozwól, że trochę Ci o sobie opowiem :)
 					</p>
 					<p>
 						Jeżeli jesteś bardziej zainteresowana/y moim kodem, to stack
@@ -218,10 +218,35 @@
 				<h2 class="section__title">Portfolio</h2>
 				<div class="section__content">
 					<p>
-						Poniżej moje projekty ułożone chronologicznie.
+						Poniżej moje projekty ułożone od najnowszego do najstarszego.
 					</p>
 					<ul>
-						<li></li>
+						<li class="project">
+							<img
+								class="project__image"
+								src="<%= require('./images/f1-hub.jpg')%>"
+								alt=""
+							/>
+							<h3 class="project__title">F1Hub</h3>
+							<p class="project__desc">
+								SSR w Next.js – aplikacja wyświetlająca historyczne dane o
+								Formule 1 aż do pierwszego sezonu w 1950 roku. Projekt w
+								budowie.
+							</p>
+							<button class="project__button">Live demo</button>
+						</li>
+						<li class="project">
+								<img
+									class="project__image"
+									src="<%= require('./images/flappy-bird.jpg')%>"
+									alt=""
+								/>
+								<h3 class="project__title">React Flappy Bird</h3>
+								<p class="project__desc">
+									Reprodukcja popularnej gry w Reactcie – ucząc się chciałem przetestować możliwości frameworka. Korzysta z Reduxa do zapisu stanu gry.
+								</p>
+								<button class="project__button">Live demo</button>
+							</li>
 					</ul>
 				</div>
 			</section>
