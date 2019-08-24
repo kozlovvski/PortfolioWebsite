@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="user-scalable=yes, width=device-width, initial-scale=1.0"
+		/>
+		<title>kozlovv.ski</title>
+		<link
+			rel="stylesheet"
+			href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
+		/>
+	</head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0">
-  <title>Webpack 4 Boilerplate</title>
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-</head>
-
-<body>
-  <section class="hello">
-    <h1>🏴‍ Ahoy there!</h1>
-    <p>☠️ Everything seems to be working, mate!</p>
-  </section>
-
-  <script defer src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
-</body>
-
+	<body>
+		<a href="#main-content" class="skip-link">Skip to the main content.</a>
+		<header class="site-header padding">
+			<h1 class="branding">kozlovv.ski</h1>
+			<ul class="navigation__container navigation__container--top">
+				<li class="navigation__item">
+					<a class="navigation__link" href="">CV</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="https://github.com/kozlovvski"
+						>GitHub</a
+					>
+				</li>
+			</ul>
+		</header>
+		<nav>
+			<ul class="navigation__container navigation__container--site">
+				<li class="navigation__item">
+					<a class="navigation__link" href="#kontakt">Kontakt</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#portfolio">Portfolio</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#co-potrafie">Co potrafię</a>
+				</li>
+				<li class="navigation__item">
+					<a class="navigation__link" href="#">O mnie</a>
+				</li>
+			</ul>
+		</nav>
+		<main id="main-content">
+			<div class="wrapper">
+				<p>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+					voluptatem, facere soluta, tenetur nobis ullam aspernatur est commodi
+					ab, excepturi qui pariatur. Mollitia magnam eius temporibus nemo
+					labore adipisci officia.
+				</p>
+			</div>
+		</main>
+		<footer class="site-footer padding">
+			<p>
+				Created with ❤️ by
+				<a href="https://github.com/kozlovvski">@kozlovvski</a>, 2019
+			</p>
+		</footer>
+		<script
+			defer
+			src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"
+		></script>
+	</body>
 </html>

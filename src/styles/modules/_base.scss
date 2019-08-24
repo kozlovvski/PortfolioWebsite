@@ -1,5 +1,20 @@
-html {
-  box-sizing: border-box;
-  color: $primary-color;
-  background: #f1f1f1;
+* {
+  box-sizing: border-box
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $ff-ss;
+  font-weight: $fw-b;
+  margin: 0;
+}
+
+p, ul {
+  font-family: $ff-ss;
+  font-weight: $fw-r;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 599px) {
+    font-size: 14px;
+  }
 }

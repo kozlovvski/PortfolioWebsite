@@ -1,7 +1,7 @@
 {
-  "name": "webpack-4-scss-boilerplate",
-  "version": "1.0.3",
-  "description": "My Webpack 4 boilerplate for static webpages built with SCSS and ES6+",
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "My portfolio website (kozlovv.ski)",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --env dev --mode none",

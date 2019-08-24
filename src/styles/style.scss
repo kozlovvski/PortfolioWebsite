@@ -2,11 +2,26 @@
 // modules
 //
 
-@import 'modules/colors';
+@import 'modules/variables';
 @import 'modules/base';
+@import 'modules/util';
 
 //
 // partials
 //
 
-@import 'partials/hello';
+@import 'partials/layout';
+
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: -99999px;
+  
+  padding: 10px;
+
+  background: #fff;
+
+  &:focus {
+      left: 0;
+  }
+}
