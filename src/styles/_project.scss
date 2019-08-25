@@ -1,11 +1,11 @@
 .project {
 	&:not(:last-child) {
-		margin-bottom: 2em;
+		margin-bottom: 3em;
 	}
 
 	&__image {
 		width: 100%;
-		margin-bottom: 1em;
+		margin-bottom: 0.8em;
 	}
 
 	&__title {
@@ -13,6 +13,7 @@
 	}
 
 	&__desc {
+
 	}
 
 	&__button {
@@ -22,20 +23,34 @@
 		border-radius: 0.3em;
 
 		font-weight: $fw-b;
+		text-decoration: none;
 
 		background: none;
 		color: #fff;
 
-		cursor: pointer;
 		transition: all ease 0.3s;
 
 		&:hover {
 			background: #fff;
 			color: $gradient1;
+
+			.project__button-icon {
+				fill: $gradient1;
+			}
 		}
 
 		&:not(:last-child) {
-			margin-right: 1em;
+			margin-right: 0.5em;
+		}
+
+		&-icon {
+			width: 0.9em;
+			margin-left: -0.2em;
+			margin-right: 0.2em;
+
+			fill: #fff;
+
+			transition: all ease 0.3s;
 		}
 	}
 }

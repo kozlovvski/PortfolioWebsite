@@ -3,7 +3,10 @@
 	grid-template-columns: 50% 50%;
 	grid-template-areas: "img title" "img content";
   grid-template-rows: auto 1fr;
-  margin-bottom: 10rem;
+	
+	&:not(:last-child) {
+		margin-bottom: 20vh;
+	}
 
 	&__image {
 		grid-area: img;
@@ -19,7 +22,7 @@
 
 	&__content {
     grid-area: content;
-    margin: 2rem 0;
+    margin: 1rem 0;
 
     p {
       text-align: justify;
@@ -33,7 +36,12 @@
 		grid-template-areas: "title img" "content content";
     grid-template-columns: auto 1fr;
 
-    margin: 0;
+		margin: 0;
+		
+		&:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	
     
 		&__image {
       max-width: calc(1.5rem + 15vw);
