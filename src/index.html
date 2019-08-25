@@ -20,7 +20,7 @@
 			<ul class="navigation__container navigation__container--top">
 				<li class="navigation__item">
 					<a
-						class="navigation__link"
+						class="navigation__link link link--bold"
 						href="/mkozlowski_cv.pdf"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -29,7 +29,7 @@
 				</li>
 				<li class="navigation__item">
 					<a
-						class="navigation__link"
+						class="navigation__link link link--bold"
 						href="https://github.com/kozlovvski"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -41,16 +41,22 @@
 		<nav>
 			<ul class="navigation__container navigation__container--site">
 				<li class="navigation__item">
-					<a class="navigation__link" href="#kontakt">Kontakt</a>
+					<a class="navigation__link link link--bold" href="#kontakt"
+						>Kontakt</a
+					>
 				</li>
 				<li class="navigation__item">
-					<a class="navigation__link" href="#portfolio">Portfolio</a>
+					<a class="navigation__link link link--bold" href="#portfolio"
+						>Portfolio</a
+					>
 				</li>
 				<li class="navigation__item">
-					<a class="navigation__link" href="#co-umiem">Co umiem</a>
+					<a class="navigation__link link link--bold" href="#co-umiem"
+						>Co umiem</a
+					>
 				</li>
 				<li class="navigation__item">
-					<a class="navigation__link" href="#o-mnie">O mnie</a>
+					<a class="navigation__link link link--bold" href="#o-mnie">O mnie</a>
 				</li>
 			</ul>
 		</nav>
@@ -70,8 +76,9 @@
 					</p>
 					<p>
 						Jeżeli jesteś bardziej zainteresowana/y moim kodem, to stack
-						znajdziesz w sekcji <a href="#co-umiem">Co umiem</a>, a projekty w
-						sekcji <a href="#portfolio">Portfolio</a>.
+						znajdziesz w sekcji
+						<a class="link link--bold" href="#co-umiem">Co umiem</a>, a projekty
+						w sekcji <a class="link link--bold" href="#portfolio">Portfolio</a>.
 					</p>
 					<p>
 						Mam 21 lat i studiuję w Szkole Głównej Handlowej w Warszawie, gdzie
@@ -236,17 +243,19 @@
 							<button class="project__button">Live demo</button>
 						</li>
 						<li class="project">
-								<img
-									class="project__image"
-									src="<%= require('./images/flappy-bird.jpg')%>"
-									alt=""
-								/>
-								<h3 class="project__title">React Flappy Bird</h3>
-								<p class="project__desc">
-									Reprodukcja popularnej gry w Reactcie – ucząc się chciałem przetestować możliwości frameworka. Korzysta z Reduxa do zapisu stanu gry.
-								</p>
-								<button class="project__button">Live demo</button>
-							</li>
+							<img
+								class="project__image"
+								src="<%= require('./images/flappy-bird.jpg')%>"
+								alt=""
+							/>
+							<h3 class="project__title">React Flappy Bird</h3>
+							<p class="project__desc">
+								Reprodukcja popularnej gry w Reactcie – ucząc się chciałem
+								przetestować możliwości frameworka. Korzysta z Reduxa do zapisu
+								stanu gry.
+							</p>
+							<button class="project__button">Live demo</button>
+						</li>
 					</ul>
 				</div>
 			</section>
@@ -262,18 +271,41 @@
 						Zachęcam do kontaktu ze mną - szukam pracy w Warszawie, ale rozważę
 						wszystkie opcje. Moje CV można pobrać
 						<a
-							class="navigation__link"
+							class="navigation__link link link--bold"
 							href="/mkozlowski_cv.pdf"
 							target="_blank"
 							rel="noopener noreferrer"
 							>tutaj</a
 						>.
 					</p>
-					<ul>
-						<li><b>tel. </b>884 852 588</li>
-						<li>
-							<b>mail: </b
-							><a href="mailto:michal@kozlovv.ski">michal@kozlovv.ski</a>
+					<ul class="contact-list">
+						<li class="contact-list__item">
+							<div class="contact-list__icon">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 512.001 512.001"
+								>
+									<path
+										d="M498.808 377.784l-63.633-63.647c-16.978-16.978-46.641-17.007-63.647 0l-10.611 10.611 127.284 127.277 10.607-10.607c17.619-17.62 17.56-46.104 0-63.634zM339.116 345.37c-13.39 10.373-32.492 9.959-44.727-2.303L168.572 217.163c-12.263-12.263-12.676-31.379-2.303-44.736L39.278 45.443c-54.631 63.68-52.495 159.633 7.8 219.928l199.103 199.19c57.86 57.858 152.635 65.532 219.932 7.797L339.116 345.37zM197.503 76.391L133.87 12.744c-16.978-16.978-46.641-17.007-63.647 0L59.612 23.355l127.284 127.277 10.607-10.608c17.618-17.618 17.56-46.102 0-63.633z"
+									/>
+								</svg>
+							</div>
+							<span class="contact-list__data">884 852 588</span>
+						</li>
+						<li class="contact-list__item">
+							<div class="contact-list__icon">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path
+										d="M317 31.022H45c-24.901 0-45 20.099-45 45v180c0 24.899 20.099 45 45 45h15v45c0 10.837 11.221 18.685 22.2 13.2.3-.3.901-.3 1.201-.601 82.516-55.335 64.023-42.997 82.5-55.2 2.399-1.5 5.099-2.399 8.099-2.399h143c24.901 0 45-20.101 45-45v-180c0-24.901-20.099-45-45-45zm-120 180H75c-19.773 0-19.854-30 0-30h122c19.773 0 19.854 30 0 30zm90-60H75c-19.773 0-19.854-30 0-30h212c19.773 0 19.854 30 0 30z"
+									/>
+									<path
+										d="M467 151.022h-75v105c0 41.4-33.6 75-75 75H178.5l-28.5 18.9v26.1c0 24.899 20.099 45 45 45h147.499l86.1 57.599c11.752 6.525 23.401-1.41 23.401-12.599v-45h15c24.901 0 45-20.101 45-45v-180c0-24.9-20.099-45-45-45z"
+									/>
+								</svg>
+							</div>
+							<a class="contact-list__data link" href="mailto:michal@kozlovv.ski"
+								>michal@kozlovv.ski</a
+							>
 						</li>
 					</ul>
 				</div>
@@ -282,7 +314,9 @@
 		<footer class="site-footer padding">
 			<p>
 				With ❤️ by
-				<a href="https://github.com/kozlovvski">@kozlovvski</a>, &copy; 2019
+				<a class="link link--bold" href="https://github.com/kozlovvski"
+					>@kozlovvski</a
+				>, &copy; 2019
 			</p>
 		</footer>
 		<script

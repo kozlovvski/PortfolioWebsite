@@ -51,33 +51,3 @@ ul {
 p {
 	line-height: 1.4em;
 }
-
-a {
-	color: inherit;
-	font-weight: $fw-b;
-	text-decoration: none;
-	position: relative;
-
-	&::after {
-		content: "";
-		display: block;
-		width: 95%;
-		height: 2px;
-		position: absolute;
-		top: 110%;
-		left: 50%;
-		transform: translate(-50%, -200%);
-
-		background: #fff;
-		opacity: 0;
-
-		transition: all ease 0.3s;
-	}
-
-	&:hover {
-		&::after {
-			opacity: 1;
-			transform: translate(-50%, 0)
-		}
-	}
-}

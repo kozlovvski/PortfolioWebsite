@@ -1,0 +1,27 @@
+.contact-list {
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  &__icon {
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.5em;
+    margin-right: 0.5em;
+
+    border-radius: 50%;
+
+    background: #fff;
+    fill: $gradient1;
+  }
+
+  &__data {
+    display: block;
+  }
+}

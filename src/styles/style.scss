@@ -1,19 +1,13 @@
-//
-// modules
-//
+@import 'variables';
+@import 'base';
 
-@import 'modules/variables';
-@import 'modules/base';
-@import 'modules/util';
-@import 'modules/section';
-@import 'modules/icon-list';
-@import 'modules/project';
-
-//
-// partials
-//
-
-@import 'partials/layout';
+@import 'layout';
+@import 'util';
+@import 'section';
+@import 'icon-list';
+@import 'project';
+@import 'link';
+@import 'contact-list';
 
 .skip-link {
   position: absolute;
