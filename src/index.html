@@ -2,11 +2,40 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<title>kozlovv.ski</title>
 		<meta
 			name="viewport"
 			content="user-scalable=yes, width=device-width, initial-scale=1.0"
 		/>
-		<title>kozlovv.ski</title>
+		<meta
+			name="description"
+			content="Szukasz juniora do swojej firmy? Świetnie się składa! Pozwól, że Ci o sobie opowiem."
+		/>
+		<link rel="icon" href="<%= require('./images/icons/favicon.png') %>" />
+		<link
+			rel="icon"
+			sizes="192x192"
+			href="<%= require('./images/icons/favicon_192.png') %>"
+		/>
+		<meta property="og:url" content="https://portfolio.kozlovv.ski" />
+		<meta property="og:title" content="kozlovv.ski" />
+		<meta
+			property="og:description"
+			content="Szukasz juniora do swojej firmy? Świetnie się składa! Pozwól, że Ci o sobie opowiem."
+		/>
+		<meta name="twitter:site" content="kozlovv.ski" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:image"
+			content="<%= require('./images/og_image.png') %>"
+		/>
+		<meta
+			property="og:image"
+			content="<%= require('./images/og_image.png') %>"
+		/>
+		<meta property="og:image:width" content="600" />
+		<meta property="og:image:height" content="315" />
+
 		<link
 			rel="stylesheet"
 			href="<%=htmlWebpackPlugin.files.chunks.main.css %>"
@@ -43,22 +72,40 @@
 		<nav class="navigation navigation--site">
 			<ul class="navigation__container">
 				<li class="navigation__item">
-					<a class="navigation__link link link--bold" href="#kontakt" data-for="kontakt">
+					<a
+						class="navigation__link link link--bold"
+						href="#kontakt"
+						data-for="kontakt"
+					>
 						Kontakt
 					</a>
 				</li>
 				<li class="navigation__item">
-					<a class="navigation__link link link--bold" href="#portfolio" data-for="portfolio">
+					<a
+						class="navigation__link link link--bold"
+						href="#portfolio"
+						data-for="portfolio"
+					>
 						Portfolio
 					</a>
 				</li>
 				<li class="navigation__item">
-					<a class="navigation__link link link--bold" href="#co-umiem" data-for="co-umiem">
+					<a
+						class="navigation__link link link--bold"
+						href="#co-umiem"
+						data-for="co-umiem"
+					>
 						Co umiem
 					</a>
 				</li>
 				<li class="navigation__item">
-					<a class="navigation__link navigation__link--active link link--bold" href="#o-mnie" data-for="o-mnie">O mnie</a>
+					<a
+						class="navigation__link navigation__link--active link link--bold"
+						href="#o-mnie"
+						data-for="o-mnie"
+					>
+						O mnie
+					</a>
 				</li>
 			</ul>
 		</nav>
@@ -81,9 +128,13 @@
 					<p>
 						Jeżeli jesteś bardziej zainteresowana/y moim kodem, to stack
 						znajdziesz w sekcji
-						<a class="link link--bold" href="#co-umiem" data-for="#co-umiem">Co umiem</a>
+						<a class="link link--bold" href="#co-umiem" data-for="#co-umiem">
+							Co umiem
+						</a>
 						, a projekty w sekcji
-						<a class="link link--bold" href="#portfolio" data-for="#portfolio">Portfolio</a>
+						<a class="link link--bold" href="#portfolio" data-for="#portfolio">
+							Portfolio
+						</a>
 						.
 					</p>
 					<p>
@@ -243,8 +294,8 @@
 							<h3 class="project__title">F1Hub</h3>
 							<p class="project__desc">
 								SSR w Next.js – aplikacja wyświetlająca historyczne dane o
-								Formule 1 aż do pierwszego sezonu w 1950 roku. Style w Material-UI. Projekt w
-								budowie.
+								Formule 1 aż do pierwszego sezonu w 1950 roku. Style w
+								Material-UI. Projekt w budowie.
 							</p>
 							<a
 								class="project__button"
@@ -280,9 +331,9 @@
 							/>
 							<h3 class="project__title">React Flappy Bird</h3>
 							<p class="project__desc">
-								Reprodukcja popularnej gry jako PWA w Reactcie – ucząc się chciałem
-								przetestować możliwości frameworka. Korzysta z Reduxa do zapisu
-								stanu gry.
+								Reprodukcja popularnej gry jako PWA w Reactcie – ucząc się
+								chciałem przetestować możliwości frameworka. Korzysta z Reduxa
+								do zapisu stanu gry.
 							</p>
 							<a
 								class="project__button"
