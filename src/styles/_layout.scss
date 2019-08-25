@@ -9,7 +9,18 @@ body {
 	padding: $padding;
 
 	color: #fff;
-	background: linear-gradient(to right, $gradient1, $gradient2);
+	background: linear-gradient(60deg, $gradient1, $gradient2);
+	&:before {
+		position: absolute;
+		content: '';
+		z-index: -1;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		opacity: 0.4;
+		background: url("../images/noise.png") repeat;
+	}
 }
 
 .site-header {
