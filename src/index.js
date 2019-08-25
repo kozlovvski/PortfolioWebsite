@@ -12,7 +12,7 @@ mainContainer.addEventListener("scroll", sectionHandler);
 
 // smooth scrolling between sections
 document
-  .querySelectorAll(".navigation--site .navigation__link")
+  .querySelectorAll("a[data-for]")
   .forEach(link => {
     const href = link.getAttribute("href");
     link.addEventListener("click", e => {
