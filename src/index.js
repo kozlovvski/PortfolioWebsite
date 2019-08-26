@@ -22,7 +22,7 @@ document
   });
 
 function sectionHandler() {
-	// check if at least half of section is in visible area
+	// check if at least a quarter of the next section is in visible area
 	const threshold = mainContainer.scrollTop + mainContainer.offsetHeight * 0.75;
 
 	if (threshold > document.getElementById("kontakt").offsetTop) {
