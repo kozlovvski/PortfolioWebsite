@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --env dev --mode none",
     "prod": "webpack --env prod --mode production",
-    "predeploy": "npm run prod",
+    "predeploy": "npm run prod && cp .htaccess dist",
     "deploy": "gh-pages -d dist"
   },
   "author": "kozlovvski",
