@@ -49,3 +49,14 @@ function setActive(selector) {
 		.classList.add("navigation__link--active");
 }
 
+
+
+function setCorrectVH() {
+	// This sets a correct vh on mobile, without taking browser bars into account
+	let vh = window.innerHeight * 0.01;
+	document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+setCorrectVH();
+
+window.addEventListener('resize', setCorrectVH);
