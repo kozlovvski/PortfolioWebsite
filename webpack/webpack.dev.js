@@ -47,11 +47,22 @@ module.exports = {
       ]
     },
     {
-      test: /\.(png|jpg|gif|svg|pdf)$/,
+      test: /\.(png|jpg|gif|svg)$/,
       use: [
         {
           loader: 'file-loader',
           options: {},
+        },
+      ],
+    },
+    {
+      test: /\.pdf$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+          },
         },
       ],
     }]
@@ -65,6 +76,12 @@ module.exports = {
       hash: false,
       template: './' + src_Path + '/index.html',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
+      template: './' + src_Path + '/en.html',
+      filename: 'en.html'
     })
   ]
 };

@@ -77,6 +77,12 @@ module.exports = {
       hash: false,
       template: './' + src_Path + '/index.html',
       filename: 'index.html'
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      hash: false,
+      template: './' + src_Path + '/en.html',
+      filename: 'en.html'
     })
   ]
 };
